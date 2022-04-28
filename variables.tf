@@ -34,3 +34,9 @@ variable "map_users" {
   }))
   default = []
 }
+
+variable "patch_only" {
+  description = "If true, only patch the aws-auth configmap, don't create it."
+  type        = boolean
+  default     = false
+}
